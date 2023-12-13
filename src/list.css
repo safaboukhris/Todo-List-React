@@ -1,0 +1,173 @@
+.transition, form button, form .question label, form .question input[type="text"] {
+  -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+}
+
+
+body {
+  background-image: radial-gradient(circle at 30% 86%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 8%, transparent 8%, transparent 92%), radial-gradient(circle at 55% 100%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 8%, transparent 8%, transparent 92%), radial-gradient(circle at 40% 75%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 7% 99%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 69% 76%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 2% 35%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 14% 48%, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 6%, transparent 6%, transparent 94%), radial-gradient(circle at 28% 87%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 65% 14%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 51% 36%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), radial-gradient(circle at 6% 93%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 4%, transparent 4%, transparent 96%), linear-gradient(135deg, rgb(23, 233, 173), rgb(29, 24, 208));
+  background-repeat: no-repeat;
+  background-size: 1600px 1200px;
+  display: flex;
+  align-items: center;
+
+}
+/* Css of the form*/
+.form2 {
+  position: relative;
+  display: inline-block;
+  max-width: 700px;
+  min-width: 500px;
+  box-sizing: border-box;
+  padding: 30px 25px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 40px;
+  margin: 60px 200px;
+  left: 50%;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.form2 h1 {
+  color: #2d58c4;
+  font-weight: bolder;
+  letter-spacing: 0.01em;
+  margin-left: 15px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+.form2 button {
+  margin-top: 35px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #1c4ac8;
+  line-height: 0;
+  font-size: 17px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  border-radius: 60px;
+  color: #1c4ac8;
+  font-weight: bolder;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+  margin-right: 20px; 
+}
+.form2 button:hover, form button:focus {
+  color: white;
+  font-weight: bolder;
+  background-color: #1c4ac8;
+
+}
+.form2 .question {
+  position: relative;
+  padding: 10px 0;
+}
+.form2 .question:first-of-type {
+  padding-top: 0;
+}
+.form2 .question:last-of-type {
+  padding-bottom: 0;
+}
+.form2 .question label {
+  transform-origin: left center;
+  color: #1c4ac8;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  font-size: 17px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  display: block;
+  position: absolute;
+  margin-top: -40px;
+  z-index: 2;
+  pointer-events: none;
+}
+.form2 .question input[type="text"] {
+  appearance: none;
+  background-color: none;
+  border: 1px solid #1c4ac8;
+  line-height: 0;
+  font-size: 17px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 60px;
+  color: #1c4ac8;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+.form2 .question input[type="text"]:focus {
+  outline: none;
+  background: #1c4ac8;
+  color: white;
+  margin-top: 30px;
+}
+.form2 .question input[type="text"]:valid {
+  margin-top: 30px;
+}
+.form2 .question input[type="text"]:focus ~ label {
+  -moz-transform: translate(0, -35px);
+  -ms-transform: translate(0, -35px);
+  -webkit-transform: translate(0, -35px);
+  transform: translate(0, -35px);
+}
+.form2 .question input[type="text"]:valid ~ label {
+  text-transform: uppercase;
+  font-style: italic;
+  -moz-transform: translate(5px, -35px) scale(0.6);
+  -ms-transform: translate(5px, -35px) scale(0.6);
+  -webkit-transform: translate(5px, -35px) scale(0.6);
+  transform: translate(5px, -35px) scale(0.6);
+}
+/* Css of the box show when i click on the button ADD*/
+.tasktodo{
+  display: block;
+  margin-left: 300px;
+
+}
+.tasktodo h2{
+  color: #1c4ac8;
+  font-weight: bolder;
+}
+.task button {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #1c4ac8;
+  padding: 15px 11px;
+  border-radius: 60px;
+  color: #1c4ac8;
+  font-weight: bolder;
+  margin: 10px;
+}
+.task button:hover, form button:focus {
+  color: white;
+  font-weight: bolder;
+  background-color: #1c4ac8;
+
+}
+.task input{
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 2px solid #1c4ac8;
+  height: 30px;
+  width: 120px;
+  margin-top: 25px;
+  color: #2d58c4;
+  font-weight: bold;
+  padding-left: 10px;
+
+}
+.task{
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 30px;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
